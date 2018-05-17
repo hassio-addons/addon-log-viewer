@@ -1,0 +1,44 @@
+{
+  "name": "Log Viewer",
+  "version": "0.1.2",
+  "slug": "log-viewer",
+  "description": "Browser-based log utility for Home Assistant",
+  "url": "https://github.com/dale3h/hassio-addons/log-viewer",
+  "startup": "application",
+  "webui": "[PROTO:ssl]://[HOST]:[PORT:4277]",
+  "homeassistant_api": true,
+  "boot": "auto",
+  "host_network": false,
+  "ports": {
+    "4277/tcp": 4277
+  },
+  "map": [
+    "config",
+    "share",
+    "ssl"
+  ],
+  "options": {
+    "username": "admin",
+    "password": "",
+    "ssl": false,
+    "certfile": "fullchain.pem",
+    "keyfile": "privkey.pem",
+    "filters": [
+      { "keyword": "ERROR", "style": "color: red; font-weight: bold;" },
+      { "keyword": "WARN", "style": "color: yellow;" },
+      { "keyword": "INFO", "style": "color: limegreen;" },
+      { "keyword": "DEBUG", "style": "color: cyan;" },
+      { "keyword": "TRACE", "style": "color: blue;" }
+    ]
+  },
+  "schema": {
+    "username": "str",
+    "password": "str",
+    "ssl": "bool",
+    "certfile": "str",
+    "keyfile": "str",
+    "filters": [
+      { "keyword": "str", "style": "str" }
+    ]
+  }
+}
