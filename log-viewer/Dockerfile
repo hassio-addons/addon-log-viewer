@@ -22,12 +22,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Log Viewer" \
-    io.hass.description="Browser-based log utility for Home Assistant" \
+    io.hass.description="Browser-based log utility for Hass.io (Home Assistant)" \
     io.hass.arch="armhf|aarch64|i386|amd64" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Dale Higgs <@dale3h>" \
-    org.label-schema.description="Browser-based log utility for Home Assistant" \
+    org.label-schema.description="Browser-based log utility for Hass.io (Home Assistant)" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Log Viewer" \
     org.label-schema.schema-version="0.1.2" \
