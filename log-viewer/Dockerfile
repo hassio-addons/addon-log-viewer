@@ -12,8 +12,9 @@ RUN \
     \
     && npm set unsafe-perm true \
     \
+    && VERSION="8a8194a0fcb871b2bbdf8722f853f6010e43d893" \
     && npm -g i \
-        git+https://github.com/dale3h/ws-log.git \
+        "git+https://github.com/dale3h/ws-log.git#${VERSION}" \
     \
     && apk del --purge .build-dependencies
 
