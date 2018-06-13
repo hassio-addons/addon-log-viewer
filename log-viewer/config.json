@@ -1,12 +1,13 @@
 {
   "name": "Log Viewer",
-  "version": "0.1.2",
-  "slug": "log-viewer",
+  "version": "dev",
+  "slug": "logviewer",
   "description": "Browser-based log utility for Hass.io (Home Assistant)",
-  "url": "https://github.com/dale3h/hassio-addons/tree/master/log-viewer",
+  "url": "https://github.com/hassio-addons/addon-log-viewer",
   "startup": "application",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:4277]",
   "homeassistant_api": true,
+  "hassio_api": true,
   "boot": "auto",
   "host_network": false,
   "ports": {
@@ -18,6 +19,7 @@
     "ssl"
   ],
   "options": {
+    "log_level": "info",
     "username": "admin",
     "password": "",
     "ssl": false,
@@ -32,6 +34,7 @@
     ]
   },
   "schema": {
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
     "username": "str",
     "password": "str",
     "ssl": "bool",
@@ -40,5 +43,8 @@
     "filters": [
       { "keyword": "str", "style": "str" }
     ]
+  },
+  "environment": {
+    "LOG_FORMAT": "{LEVEL}: {MESSAGE}"
   }
 }
