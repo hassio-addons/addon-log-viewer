@@ -10,7 +10,10 @@ RUN \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.15.2-r0 \
     \
-    && npm i -g git+https://github.com/dale3h/ws-log.git \
+    && npm set unsafe-perm true \
+    \
+    && npm -g install \
+        git+https://github.com/dale3h/ws-log.git \
     \
     && apk del --purge .build-dependencies
 
