@@ -3,8 +3,8 @@ image: docker:latest
 
 variables:
   ADDON_GITHUB_REPO: hassio-addons/addon-log-viewer
-  ADDON_SLUG: log
-  ADDON_TARGET: ssh
+  ADDON_SLUG: log-viewer
+  ADDON_TARGET: log-viewer
   DOCKER_DRIVER: overlay2
   DOCKER_HUB_ORG: hassioaddons
 
