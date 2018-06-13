@@ -1,9 +1,6 @@
-# hassio-addons
+# Hass.io Log Viewer
+Browser-based log utility for Hass.io (Home Assistant)
 
-Repository for Dale's Hass.io Add-ons
-
-## [Log Viewer][log-viewer] ![Latest Version][log-viewer-version-shield]
-Log Viewer: WIP, public beta testing
-
-[log-viewer]: https://github.com/dale3h/hassio-addons/tree/master/log-viewer
-[log-viewer-version-shield]: https://img.shields.io/badge/version-v0.1.2-blue.svg
+**PLEASE NOTE:** This add-on is currently in testing. Username and password
+configuration options *DO NOT* work, so please be sure to restrict this
+add-on to local access only.
