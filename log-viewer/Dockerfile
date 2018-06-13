@@ -12,7 +12,7 @@ RUN \
     \
     && npm set unsafe-perm true \
     \
-    && npm -g install \
+    && npm -g i \
         git+https://github.com/dale3h/ws-log.git \
     \
     && apk del --purge .build-dependencies
