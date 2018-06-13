@@ -26,9 +26,9 @@ The installation of this add-on is pretty straightforward and not different in
 comparison to installing any other Hass.io add-on.
 
 1. [Add our Hass.io add-ons repository][repository] to your Hass.io instance.
-2. Install the "Log Viewer" add-on.
-3. Start the "Log Viewer" add-on
-4. Check the logs of the "Log Viewer" add-on to see if everything went well.
+1. Install the "Log Viewer" add-on.
+1. Start the "Log Viewer" add-on
+1. Check the logs of the "Log Viewer" add-on to see if everything went well.
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
@@ -98,7 +98,6 @@ Please note that each level automatically includes log messages from a
 more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
-
 
 ### Option: `ssl`
 
