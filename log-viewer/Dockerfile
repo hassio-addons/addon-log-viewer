@@ -1,4 +1,5 @@
 ARG BUILD_FROM=hassioaddons/base-amd64:1.4.2
+# hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
 # Install requirements for add-on
