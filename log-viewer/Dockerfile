@@ -5,7 +5,8 @@ FROM ${BUILD_FROM}
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
-        nodejs=8.9.3-r1 \
+        nodejs=8.11.3-r1 \
+        npm=8.11.3-r1 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.15.2-r0 \
