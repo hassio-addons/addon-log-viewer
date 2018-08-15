@@ -20,7 +20,7 @@
   ],
   "options": {
     "log_level": "info",
-    "username": "admin",
+    "username": "",
     "password": "",
     "ssl": true,
     "certfile": "fullchain.pem",
