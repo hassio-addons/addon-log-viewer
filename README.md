@@ -109,6 +109,18 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
+### Option: `username`
+
+Username for authenticating with Log Viewer web interface.
+
+**Note**: _This option support secrets, e.g., `!secret viewer_username`._
+
+### Option: `password`
+
+Password for authenticating with Log Viewer web interface.
+
+**Note**: _This option support secrets, e.g., `!secret viewer_password`._
+
 ### Option: `ssl`
 
 Enables/Disables SSL on the Log Viewer. Set it `true` to enable it,
@@ -125,6 +137,23 @@ The certificate file to use for SSL.
 The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
+
+### Option: `i_like_to_be_pwned`
+
+Adding this option to the add-on configuration allows to you bypass the
+HaveIBeenPwned password requirement by setting it to `true`.
+
+**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
+using this option! USE AT YOUR OWN RISK!_
+
+### Option: `leave_front_door_open`
+
+Adding this option to the add-on configuration allows you to disable
+authentication on the Web Terminal by setting it to `true` and leaving the
+username and password empty.
+
+**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
+only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Changelog & Releases
 
