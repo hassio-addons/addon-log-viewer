@@ -14,11 +14,12 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
-Browser-based log utility for Hass.io (Home Assistant)
+Browser-based log utility for Hass.io.
 
 ## About
 
-Lorem ipsum
+Easily monitor your Home Assistant logs in your web browser. Custom filtering
+is available to make it simple to differentiate different types of logs.
 
 ## Installation
 
@@ -29,6 +30,15 @@ comparison to installing any other Hass.io add-on.
 1. Install the "Log Viewer" add-on.
 1. Start the "Log Viewer" add-on
 1. Check the logs of the "Log Viewer" add-on to see if everything went well.
+1. Open the web UI for the "Log Viewer" add-on to start watching logs.
+
+**Tip:** To see more logs, be sure to enable the [`logger`][logger] component
+         in your Home Assistant `configuration.yaml`:
+
+```yaml
+logger:
+  default: info
+```
 
 **NOTE**: Do not add this repository to Hass.io, please use:
 `https://github.com/hassio-addons/repository`.
@@ -217,14 +227,13 @@ SOFTWARE.
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-log-viewer.svg
 [commits]: https://github.com/hassio-addons/addon-log-viewer/commits/master
 [contributors]: https://github.com/hassio-addons/addon-log-viewer/graphs/contributors
+[dale3h]: https://github.com/dale3h
 [discord-shield]: https://img.shields.io/discord/330944238910963714.svg
 [discord]: https://discord.gg/c5DvZ4e
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/
-[dale3h]: https://github.com/dale3h
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-log-viewer/pipelines
-[home-assistant]: https://home-assistant.io
 [i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
 [i386-dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer-i386
 [i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer-i386.svg
@@ -232,12 +241,13 @@ SOFTWARE.
 [i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer-i386.svg
 [i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer-i386.svg
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
-[keepchangelog]: http://keepachangelog.com/en/1.0.0/
+[keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
+[logger]: https://www.home-assistant.io/components/logger/
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-log-viewer.svg
 [releases]: https://github.com/hassio-addons/addon-log-viewer/releases
 [repository]: https://github.com/hassio-addons/repository
-[semver]: http://semver.org/spec/v2.0.0.htm
+[semver]: https://semver.org/spec/v2.0.0.htm
