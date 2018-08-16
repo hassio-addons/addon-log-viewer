@@ -273,7 +273,7 @@ SOFTWARE.
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
-[forum]: https://community.home-assistant.io/
+[forum]: https://community.home-assistant.io/t/community-hass-io-add-on-log-viewer/64377?u=dale3h
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-log-viewer/pipelines
 [i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg

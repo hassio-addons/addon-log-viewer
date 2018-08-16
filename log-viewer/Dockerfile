@@ -43,7 +43,7 @@ LABEL \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Log Viewer" \
     org.label-schema.schema-version="1.0" \
-    org.label-schema.url="" \
+    org.label-schema.url="https://community.home-assistant.io/t/community-hass-io-add-on-log-viewer/64377?u=dale3h" \
     org.label-schema.usage="https://github.com/hassio-addons/addon-log-viewer/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-log-viewer/tree/master/log-viewer" \
