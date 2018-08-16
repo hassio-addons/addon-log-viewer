@@ -16,7 +16,7 @@ RUN \
     \
     && npm set unsafe-perm true \
     \
-    && VERSION="ebd0328431c491bf5b172dab6f9eca89f5a2299a" \
+    && VERSION="5d76f19cd82fbb1becc56327fd46bbb1de8e2d48" \
     && npm -g i \
         "git+https://github.com/dale3h/ws-log.git#${VERSION}" \
     \
