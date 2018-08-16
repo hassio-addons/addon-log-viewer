@@ -130,13 +130,24 @@ Enables/Disables SSL on the Log Viewer. Set it `true` to enable it,
 
 The certificate file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io._
 
 ### Option: `keyfile`
 
 The private key file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io._
+
+### Option: `filters`
+
+A list of filters to be used when displaying the log. Each filter must be in
+the format of `{ "keyword": "KEYWORD", "style": "CSS_STYLING" }`
+
+If **`KEYWORD`** is found in a line, that entire log line is styled using
+**`CSS_STYLING`**.
+
+**Note**: _Filters are processed in the order in which they are listed. Each
+line is limited to just one filter._
 
 ### Option: `i_like_to_be_pwned`
 
