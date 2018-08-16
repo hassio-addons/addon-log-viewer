@@ -109,6 +109,18 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
+### Option: `username`
+
+Username for authenticating with Log Viewer web interface.
+
+**Note**: _This option support secrets, e.g., `!secret viewer_username`._
+
+### Option: `password`
+
+Password for authenticating with Log Viewer web interface.
+
+**Note**: _This option support secrets, e.g., `!secret viewer_password`._
+
 ### Option: `ssl`
 
 Enables/Disables SSL on the Log Viewer. Set it `true` to enable it,
@@ -118,13 +130,41 @@ Enables/Disables SSL on the Log Viewer. Set it `true` to enable it,
 
 The certificate file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io._
 
 ### Option: `keyfile`
 
 The private key file to use for SSL.
 
-**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io_
+**Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io._
+
+### Option: `filters`
+
+A list of filters to be used when displaying the log. Each filter must be in
+the format of `{ "keyword": "KEYWORD", "style": "CSS_STYLING" }`
+
+If **`KEYWORD`** is found in a line, that entire log line is styled using
+**`CSS_STYLING`**.
+
+**Note**: _Filters are processed in the order in which they are listed. Each
+line is limited to just one filter._
+
+### Option: `i_like_to_be_pwned`
+
+Adding this option to the add-on configuration allows to you bypass the
+HaveIBeenPwned password requirement by setting it to `true`.
+
+**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
+using this option! USE AT YOUR OWN RISK!_
+
+### Option: `leave_front_door_open`
+
+Adding this option to the add-on configuration allows you to disable
+authentication on the Web Terminal by setting it to `true` and leaving the
+username and password empty.
+
+**Note**: _We STRONGLY suggest, not to use this, even if this add-on is
+only exposed to your internal network. USE AT YOUR OWN RISK!_
 
 ## Changelog & Releases
 
@@ -146,10 +186,11 @@ Got questions?
 
 You have several options to get them answered:
 
-- The Home Assistant [Community Forum][forum], we have a
-  [dedicated topic][forum] on that forum regarding this add-on.
-- The Home Assistant [Discord Chat Server][discord] for general Home Assistant
-  discussions and questions.
+- The [Community Hass.io Add-ons Discord chat server][discord] for add-on
+  support and feature requests.
+- The [Home Assistant Discord chat server][discord-ha] for general Home
+  Assistant discussions and questions.
+- The Home Assistant [Community Forum][forum].
 - Join the [Reddit subreddit][reddit] in [/r/homeassistant][reddit]
 
 You could also [open an issue here][issue] GitHub.
@@ -228,8 +269,9 @@ SOFTWARE.
 [commits]: https://github.com/hassio-addons/addon-log-viewer/commits/master
 [contributors]: https://github.com/hassio-addons/addon-log-viewer/graphs/contributors
 [dale3h]: https://github.com/dale3h
-[discord-shield]: https://img.shields.io/discord/330944238910963714.svg
-[discord]: https://discord.gg/c5DvZ4e
+[discord-ha]: https://discord.gg/c5DvZ4e
+[discord-shield]: https://img.shields.io/discord/478094546522079232.svg
+[discord]: https://discord.me/hassioaddons
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
