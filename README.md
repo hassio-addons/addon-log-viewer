@@ -45,25 +45,14 @@ logger:
 
 ## Docker status
 
-[![Docker Architecture][armhf-arch-shield]][armhf-dockerhub]
-[![Docker Version][armhf-version-shield]][armhf-microbadger]
-[![Docker Layers][armhf-layers-shield]][armhf-microbadger]
-[![Docker Pulls][armhf-pulls-shield]][armhf-dockerhub]
+![Supports armhf Architecture][armhf-shield]
+![Supports aarch64 Architecture][aarch64-shield]
+![Supports amd64 Architecture][amd64-shield]
+![Supports i386 Architecture][i386-shield]
 
-[![Docker Architecture][aarch64-arch-shield]][aarch64-dockerhub]
-[![Docker Version][aarch64-version-shield]][aarch64-microbadger]
-[![Docker Layers][aarch64-layers-shield]][aarch64-microbadger]
-[![Docker Pulls][aarch64-pulls-shield]][aarch64-dockerhub]
-
-[![Docker Architecture][amd64-arch-shield]][amd64-dockerhub]
-[![Docker Version][amd64-version-shield]][amd64-microbadger]
-[![Docker Layers][amd64-layers-shield]][amd64-microbadger]
-[![Docker Pulls][amd64-pulls-shield]][amd64-dockerhub]
-
-[![Docker Architecture][i386-arch-shield]][i386-dockerhub]
-[![Docker Version][i386-version-shield]][i386-microbadger]
-[![Docker Layers][i386-layers-shield]][i386-microbadger]
-[![Docker Pulls][i386-pulls-shield]][i386-dockerhub]
+[![Docker Version][version-shield]][microbadger]
+[![Docker Layers][layers-shield]][microbadger]
+[![Docker Pulls][pulls-shield]][dockerhub]
 
 ## Configuration
 
@@ -89,7 +78,7 @@ Example add-on configuration:
 }
 ```
 
-**Note**: _This is just an example, don't copy and past it! Create your own!_
+**Note**: _This is just an example, don't copy and paste it! Create your own!_
 
 ### Option: `log_level`
 
@@ -243,24 +232,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-[aarch64-arch-shield]: https://img.shields.io/badge/architecture-aarch64-blue.svg
-[aarch64-dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer-aarch64
-[aarch64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer-aarch64.svg
-[aarch64-microbadger]: https://microbadger.com/images/hassioaddons/log-viewer-aarch64
-[aarch64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer-aarch64.svg
-[aarch64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer-aarch64.svg
-[amd64-arch-shield]: https://img.shields.io/badge/architecture-amd64-blue.svg
-[amd64-dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer-amd64
-[amd64-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer-amd64.svg
-[amd64-microbadger]: https://microbadger.com/images/hassioaddons/log-viewer-amd64
-[amd64-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer-amd64.svg
-[amd64-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer-amd64.svg
-[armhf-arch-shield]: https://img.shields.io/badge/architecture-armhf-blue.svg
-[armhf-dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer-armhf
-[armhf-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer-armhf.svg
-[armhf-microbadger]: https://microbadger.com/images/hassioaddons/log-viewer-armhf
-[armhf-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer-armhf.svg
-[armhf-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer-armhf.svg
+[aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
+[amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [bountysource-shield]: https://img.shields.io/bountysource/team/hassio-addons/activity.svg
 [bountysource]: https://www.bountysource.com/teams/hassio-addons/issues
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
@@ -272,24 +246,24 @@ SOFTWARE.
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
+[dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/community-hass-io-add-on-log-viewer/64377?u=dale3h
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-log-viewer/pipelines
-[i386-arch-shield]: https://img.shields.io/badge/architecture-i386-blue.svg
-[i386-dockerhub]: https://hub.docker.com/r/hassioaddons/log-viewer-i386
-[i386-layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer-i386.svg
-[i386-microbadger]: https://microbadger.com/images/hassioaddons/log-viewer-i386
-[i386-pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer-i386.svg
-[i386-version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer-i386.svg
+[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [keepchangelog]: https://keepachangelog.com/en/1.0.0/
+[layers-shield]: https://images.microbadger.com/badges/image/hassioaddons/log-viewer.svg
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
 [logger]: https://www.home-assistant.io/components/logger/
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2018.svg
+[microbadger]: https://microbadger.com/images/hassioaddons/log-viewer
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[pulls-shield]: https://img.shields.io/docker/pulls/hassioaddons/log-viewer.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-log-viewer.svg
 [releases]: https://github.com/hassio-addons/addon-log-viewer/releases
 [repository]: https://github.com/hassio-addons/repository
 [semver]: https://semver.org/spec/v2.0.0.htm
+[version-shield]: https://images.microbadger.com/badges/version/hassioaddons/log-viewer.svg
