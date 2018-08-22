@@ -16,6 +16,8 @@
 
 Browser-based log utility for Hass.io.
 
+![Log Viewer Screenshot](images/screenshot.gif)
+
 ## About
 
 Easily monitor your Home Assistant logs in your web browser. Custom filtering
