@@ -8,8 +8,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
-        nodejs=8.11.4-r0 \
-        npm=8.11.4-r0 \
+        nodejs=8.14.0-r0 \
+        npm=8.14.0-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.18.1-r0 \
