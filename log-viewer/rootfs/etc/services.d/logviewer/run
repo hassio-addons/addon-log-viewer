@@ -1,23 +1,22 @@
-#!/usr/bin/with-contenv bash
+#!/usr/bin/with-contenv bashio
 # ==============================================================================
 # Community Hass.io Add-ons: Log Viewer
 # Runs the Log Viewer
 # ==============================================================================
-# shellcheck disable=SC1091
-source /usr/lib/hassio-addons/base.sh
-
 readonly LOG_FILE="/config/home-assistant.log"
 declare -a options
 
-options+=(--user "$(hass.config.get 'username')")
-options+=(--password "$(hass.config.get 'password')")
+bashio::log.info "Starting Log Viewer..."
 
-if hass.config.true 'ssl'; then
+options+=(--user "$(bashio::config 'username')")
+options+=(--password "$(bashio::config 'password')")
+
+if bashio::config.true 'ssl'; then
     options+=(--ssl)
-    options+=(--certfile "/ssl/$(hass.config.get 'certfile')")
-    options+=(--keyfile "/ssl/$(hass.config.get 'keyfile')")
+    options+=(--certfile "/ssl/$(bashio::config 'certfile')")
+    options+=(--keyfile "/ssl/$(bashio::config 'keyfile')")
 fi
 
-hass.log.debug "$(hass.config.get 'filters')"
+bashio::log.debug "$(bashio::config 'filters')"
 
 exec ws-log "${options[@]}" "${LOG_FILE}"

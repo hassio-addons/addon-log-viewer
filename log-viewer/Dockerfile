@@ -20,7 +20,7 @@ RUN \
     && npm -g i \
         "git+https://github.com/dale3h/ws-log.git#${VERSION}" \
     \
-    && apk del --purge .build-dependencies
+    && apk del --no-cache --purge .build-dependencies
 
 # Copy root file system
 COPY rootfs /
