@@ -247,7 +247,6 @@ SOFTWARE.
 [gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
 [gitlabci]: https://gitlab.com/hassio-addons/addon-log-viewer/pipelines
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
