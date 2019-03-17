@@ -20,7 +20,6 @@
     "ssl"
   ],
   "options": {
-    "log_level": "info",
     "username": "",
     "password": "",
     "ssl": true,
@@ -35,7 +34,7 @@
     ]
   },
   "schema": {
-    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)",
+    "log_level": "match(^(trace|debug|info|notice|warning|error|fatal)$)?",
     "username": "str",
     "password": "str",
     "ssl": "bool",
