@@ -151,6 +151,23 @@ username and password empty.
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
 
+## Embedding into Home Assistant
+
+It is possible to embed the log viewer interface directly into
+Home Assistant, allowing you to access it through the Home Assistant frontend.
+
+Home Assistant provides the `panel_iframe` component, for these purposes.
+
+Example configuration:
+
+```yaml
+panel_iframe:
+  logviewer:
+    title: Log Viewer
+    icon: mdi:bug-check
+    url: http://addres.to.your.hass.io:4277
+```
+
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
