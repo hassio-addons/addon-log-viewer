@@ -1,7 +1,9 @@
-#!/usr/bin/with-contenv bashio
+#!/usr/bin/execlineb -S0
 # ==============================================================================
 # Community Hass.io Add-ons: Log Viewer
-# Runs the Log Viewer
+# Take down the S6 supervision tree when Nginx fails
 # ==============================================================================
-bashio::log.info "Starting Log Viewer..."
-exec ws-log "/config/home-assistant.log"
+if { s6-test ${1} -ne 0 }
+if { s6-test ${1} -ne 256 }
+
+s6-svscanctl -t /var/run/s6/services

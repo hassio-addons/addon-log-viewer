@@ -8,6 +8,9 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
+        lua-resty-http=0.12-r1 \
+        nginx-mod-http-lua=1.14.2-r0 \
+        nginx=1.14.2-r0 \
         nodejs=10.14.2-r0 \
         npm=10.14.2-r0 \
     \
@@ -16,11 +19,12 @@ RUN \
     \
     && npm set unsafe-perm true \
     \
-    && VERSION="1ca06235bac64e8afb98fe833ca23d7266fd98e1" \
+    && VERSION="c5b60e75dab012bb5fb01096898c643fafe09bb5" \
     && npm -g i \
-        "git+https://github.com/dale3h/ws-log.git#${VERSION}" \
+        "git+https://github.com/frenck/ws-log.git#${VERSION}" \
     \
-    && apk del --no-cache --purge .build-dependencies
+    && apk del --no-cache --purge .build-dependencies \
+    && rm -f -r /etc/nginx
 
 # Copy root file system
 COPY rootfs /

@@ -59,18 +59,9 @@ Example add-on configuration:
 ```json
 {
   "log_level": "info",
-  "username": "admin",
-  "password": "",
   "ssl": false,
   "certfile": "fullchain.pem",
   "keyfile": "privkey.pem",
-  "filters": [
-    { "keyword": "ERROR", "style": "color: red; font-weight: bold;" },
-    { "keyword": "WARN", "style": "color: yellow;" },
-    { "keyword": "INFO", "style": "color: limegreen;" },
-    { "keyword": "DEBUG", "style": "color: cyan;" },
-    { "keyword": "TRACE", "style": "color: blue;" }
-  ]
 }
 ```
 
@@ -94,22 +85,13 @@ more severe level, e.g., `debug` also shows `info` messages. By default,
 the `log_level` is set to `info`, which is the recommended setting unless
 you are troubleshooting.
 
-### Option: `username`
-
-Username for authenticating with Log Viewer web interface.
-
-**Note**: _This option support secrets, e.g., `!secret viewer_username`._
-
-### Option: `password`
-
-Password for authenticating with Log Viewer web interface.
-
-**Note**: _This option support secrets, e.g., `!secret viewer_password`._
-
 ### Option: `ssl`
 
 Enables/Disables SSL on the Log Viewer. Set it `true` to enable it,
 `false` otherwise.
+
+**Note**: _The SSL settings only apply to direct access and has no effect
+on the Hass.io Ingress service._
 
 ### Option: `certfile`
 
@@ -123,25 +105,6 @@ The private key file to use for SSL.
 
 **Note**: _The file MUST be stored in `/ssl/`, which is default for Hass.io._
 
-### Option: `filters`
-
-A list of filters to be used when displaying the log. Each filter must be in
-the format of `{ "keyword": "KEYWORD", "style": "CSS_STYLING" }`
-
-If **`KEYWORD`** is found in a line, that entire log line is styled using
-**`CSS_STYLING`**.
-
-**Note**: _Filters are processed in the order in which they are listed. Each
-line is limited to just one filter._
-
-### Option: `i_like_to_be_pwned`
-
-Adding this option to the add-on configuration allows to you bypass the
-HaveIBeenPwned password requirement by setting it to `true`.
-
-**Note**: _We STRONGLY suggest picking a stronger/safer password instead of
-using this option! USE AT YOUR OWN RISK!_
-
 ### Option: `leave_front_door_open`
 
 Adding this option to the add-on configuration allows you to disable
@@ -150,23 +113,6 @@ username and password empty.
 
 **Note**: _We STRONGLY suggest, not to use this, even if this add-on is
 only exposed to your internal network. USE AT YOUR OWN RISK!_
-
-## Embedding into Home Assistant
-
-It is possible to embed the log viewer interface directly into
-Home Assistant, allowing you to access it through the Home Assistant frontend.
-
-Home Assistant provides the `panel_iframe` component, for these purposes.
-
-Example configuration:
-
-```yaml
-panel_iframe:
-  logviewer:
-    title: Log Viewer
-    icon: mdi:bug-check
-    url: http://addres.to.your.hass.io:4277
-```
 
 ## Changelog & Releases
 
