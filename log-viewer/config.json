@@ -8,6 +8,7 @@
   "startup": "application",
   "ingress": true,
   "ingress_port": 1337,
+  "panel_icon": "mdi:file-document-box-outline",
   "homeassistant": "0.92.0b2",
   "arch": [
     "aarch64",
