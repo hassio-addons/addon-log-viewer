@@ -39,7 +39,7 @@ comparison to installing any other Hass.io add-on.
 1. Check the logs of the "Log Viewer" add-on to see if everything went well.
 1. Open the web UI for the "Log Viewer" add-on to start watching logs.
 
-**Tip:** To see more logs, be sure to enable the [`logger`][logger] component
+**Tip:** To see more logs, be sure to enable the [`logger`][logger] integration
          in your Home Assistant `configuration.yaml`:
 
 ```yaml
@@ -213,7 +213,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
-[logger]: https://www.home-assistant.io/components/logger/
+[logger]: https://www.home-assistant.io/integrations/logger/
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
 [microbadger]: https://microbadger.com/images/hassioaddons/log-viewer
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
