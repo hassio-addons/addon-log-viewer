@@ -167,7 +167,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018-2019 Dale Higgs <@dale3h>
+Copyright (c) 2018-2020 Dale Higgs <@dale3h>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -210,7 +210,7 @@ SOFTWARE.
 [keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
 [logger]: https://www.home-assistant.io/integrations/logger/
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2019.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2020.svg
 [microbadger]: https://microbadger.com/images/hassioaddons/log-viewer
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
