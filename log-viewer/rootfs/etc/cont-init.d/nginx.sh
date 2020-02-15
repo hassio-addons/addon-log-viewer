@@ -1,6 +1,6 @@
 #!/usr/bin/with-contenv bashio
 # ==============================================================================
-# Community Hass.io Add-ons: Log Viewer
+# Home Assistant Community Add-on: Log Viewer
 # Configures NGINX
 # ==============================================================================
 declare port
