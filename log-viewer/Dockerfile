@@ -38,12 +38,12 @@ ARG BUILD_VERSION
 # Labels
 LABEL \
     io.hass.name="Log Viewer" \
-    io.hass.description="Browser-based log utility for Hass.io" \
+    io.hass.description="Browser-based log utility for Home Assistant" \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
     maintainer="Dale Higgs <@dale3h>" \
-    org.label-schema.description="Browser-based log utility for Hass.io" \
+    org.label-schema.description="Browser-based log utility for Home Assistant" \
     org.label-schema.build-date=${BUILD_DATE} \
     org.label-schema.name="Log Viewer" \
     org.label-schema.schema-version="1.0" \
@@ -51,4 +51,4 @@ LABEL \
     org.label-schema.usage="https://github.com/hassio-addons/addon-log-viewer/tree/master/README.md" \
     org.label-schema.vcs-ref=${BUILD_REF} \
     org.label-schema.vcs-url="https://github.com/hassio-addons/addon-log-viewer/tree/master/log-viewer" \
-    org.label-schema.vendor="Community Hass.io Addons"
+    org.label-schema.vendor="Home Assistant Community Add-ons"

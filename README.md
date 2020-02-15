@@ -19,7 +19,7 @@
 
 [![Buy me a coffee][buymeacoffee-shield]][buymeacoffee]
 
-Browser-based log utility for Hass.io.
+Browser-based log utility for Home Assistant.
 
 ![Log Viewer Screenshot](images/screenshot.gif)
 
