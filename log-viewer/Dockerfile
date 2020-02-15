@@ -9,8 +9,8 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.16.1-r4 \
-        nginx=1.16.1-r4 \
+        nginx-mod-http-lua=1.16.1-r6 \
+        nginx=1.16.1-r6 \
         nodejs=12.14.0-r0 \
         npm=12.14.0-r0 \
     \
