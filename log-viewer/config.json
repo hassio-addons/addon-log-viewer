@@ -6,6 +6,7 @@
   "url": "https://github.com/hassio-addons/addon-log-viewer",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
   "startup": "application",
+  "init": false,
   "ingress": true,
   "ingress_port": 1337,
   "panel_icon": "mdi:file-document-box-outline",
