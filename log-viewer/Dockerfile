@@ -15,7 +15,7 @@ RUN \
         npm=12.15.0-r1 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.24.1-r0 \
+        git=2.24.3-r0 \
     \
     && npm set unsafe-perm true \
     \
