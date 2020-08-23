@@ -12,7 +12,7 @@ RUN \
         nginx-mod-http-lua=1.18.0-r0 \
         nginx=1.18.0-r0 \
         nodejs=12.18.3-r0 \
-        npm=12.15.0-r1 \
+        npm=12.18.3-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.24.3-r0 \
