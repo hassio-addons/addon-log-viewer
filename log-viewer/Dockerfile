@@ -11,8 +11,8 @@ RUN \
         lua-resty-http=0.15-r0 \
         nginx-mod-http-lua=1.18.0-r1 \
         nginx=1.18.0-r1 \
-        nodejs=12.18.3-r0 \
-        npm=12.18.3-r0 \
+        nodejs=12.18.4-r0 \
+        npm=12.18.4-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.26.2-r0 \
