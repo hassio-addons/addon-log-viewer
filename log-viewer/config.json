@@ -5,7 +5,6 @@
   "description": "Browser-based log utility for Home Assistant",
   "url": "https://github.com/hassio-addons/addon-log-viewer",
   "webui": "[PROTO:ssl]://[HOST]:[PORT:80]",
-  "startup": "application",
   "init": false,
   "ingress": true,
   "ingress_port": 1337,
@@ -14,9 +13,7 @@
   "arch": ["aarch64", "amd64", "armhf", "armv7", "i386"],
   "homeassistant_api": true,
   "hassio_api": true,
-  "hassio_role": "default",
   "auth_api": true,
-  "boot": "auto",
   "ports": {
     "80/tcp": null
   },

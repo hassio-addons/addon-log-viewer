@@ -10,7 +10,7 @@
 ![Supports armv7 Architecture][armv7-shield]
 ![Supports i386 Architecture][i386-shield]
 
-[![GitLab CI][gitlabci-shield]][gitlabci]
+[![Github Actions][github-actions-shield]][github-actions]
 ![Project Maintenance][maintenance-shield]
 [![GitHub Activity][commits-shield]][commits]
 
@@ -100,17 +100,17 @@ SOFTWARE.
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/dale3h
 [commits-shield]: https://img.shields.io/github/commit-activity/y/hassio-addons/addon-log-viewer.svg
-[commits]: https://github.com/hassio-addons/addon-log-viewer/commits/master
+[commits]: https://github.com/hassio-addons/addon-log-viewer/commits/main
 [contributors]: https://github.com/hassio-addons/addon-log-viewer/graphs/contributors
 [dale3h]: https://github.com/dale3h
 [discord-ha]: https://discord.gg/c5DvZ4e
 [discord-shield]: https://img.shields.io/discord/478094546522079232.svg
 [discord]: https://discord.me/hassioaddons
-[docs]: https://github.com/hassio-addons/addon-log-viewer/blob/master/log-viewer/DOCS.md
+[docs]: https://github.com/hassio-addons/addon-log-viewer/blob/main/log-viewer/DOCS.md
 [forum-shield]: https://img.shields.io/badge/community-forum-brightgreen.svg
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-log-viewer/64377?u=dale3h
-[gitlabci-shield]: https://gitlab.com/hassio-addons/addon-log-viewer/badges/master/pipeline.svg
-[gitlabci]: https://gitlab.com/hassio-addons/addon-log-viewer/pipelines
+[github-actions-shield]: https://github.com/hassio-addons/addon-log-viewer/workflows/CI/badge.svg
+[github-actions]: https://github.com/hassio-addons/addon-log-viewer/actions
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
