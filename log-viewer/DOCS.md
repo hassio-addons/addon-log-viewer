@@ -87,8 +87,7 @@ only exposed to your internal network. USE AT YOUR OWN RISK!_
 ## Changelog & Releases
 
 This repository keeps a change log using [GitHub's releases][releases]
-functionality. The format of the log is based on
-[Keep a Changelog][keepchangelog].
+functionality.
 
 Releases are based on [Semantic Versioning][semver], and use the format
 of `MAJOR.MINOR.PATCH`. In a nutshell, the version will be incremented
@@ -150,7 +149,6 @@ SOFTWARE.
 [discord]: https://discord.me/hassioaddons
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-log-viewer/64377?u=dale3h
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
-[keepchangelog]: https://keepachangelog.com/en/1.0.0/
 [logger]: https://www.home-assistant.io/integrations/logger/
 [reddit]: https://reddit.com/r/homeassistant
 [releases]: https://github.com/hassio-addons/addon-log-viewer/releases
