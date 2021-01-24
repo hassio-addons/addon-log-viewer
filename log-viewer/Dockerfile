@@ -1,4 +1,4 @@
-ARG BUILD_FROM=hassioaddons/base:8.0.5
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.1.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,13 +9,13 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r1 \
-        nginx=1.18.0-r1 \
-        nodejs=12.18.4-r0 \
-        npm=12.18.4-r0 \
+        nginx-mod-http-lua=1.18.0-r13 \
+        nginx=1.18.0-r13 \
+        nodejs=14.15.4-r0 \
+        npm=14.15.4-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.26.2-r0 \
+        git=2.30.0-r0 \
     \
     && npm set unsafe-perm true \
     \
