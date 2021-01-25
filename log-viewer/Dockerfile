@@ -8,8 +8,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
-        lua-resty-http=0.15-r0 \
-        nginx-mod-http-lua=1.18.0-r13 \
         nginx=1.18.0-r13 \
         nodejs=14.15.4-r0 \
         npm=14.15.4-r0 \
