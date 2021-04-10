@@ -28,7 +28,7 @@ jobs:
       description: ${{ steps.information.outputs.description }}
       environment: ${{ steps.release.outputs.environment }}
       name: ${{ steps.information.outputs.name }}
-      slug: "logviewer"
+      slug: "log-viewer"
       target: ${{ steps.information.outputs.target }}
       version: ${{ steps.release.outputs.version }}
     steps:
