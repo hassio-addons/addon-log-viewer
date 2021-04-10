@@ -9,5 +9,8 @@ server {
         deny    all;
 
         proxy_pass http://backend;
+        sub_filter_once off;
+        sub_filter 'href="/css/'  'href="css/';
+        sub_filter 'src="/js/' 'src="js/';
     }
 }
