@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:9.2.2
+ARG BUILD_FROM=ghcr.io/hassio-addons/base/amd64:10.0.0
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -8,12 +8,12 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
-        nginx=1.18.0-r15 \
-        nodejs=14.16.1-r1 \
-        npm=14.16.1-r1 \
+        nginx=1.20.1-r3 \
+        nodejs=14.17.1-r0 \
+        npm=7.17.0-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.30.2-r0 \
+        git=2.32.0-r0 \
     \
     && npm set unsafe-perm true \
     \
