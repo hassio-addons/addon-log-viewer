@@ -9,7 +9,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 RUN \
     apk add --no-cache \
         nginx=1.20.2-r0 \
-        nodejs=16.13.1-r0 \
+        nodejs=16.13.2-r0 \
         npm=8.1.3-r0 \
     \
     && apk add --no-cache --virtual .build-dependencies \
