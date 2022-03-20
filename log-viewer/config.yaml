@@ -4,6 +4,7 @@ version: dev
 slug: logviewer
 description: Browser-based log utility for Home Assistant
 url: https://github.com/hassio-addons/addon-log-viewer
+codenotary: codenotary@frenck.dev
 init: false
 ingress: true
 ingress_stream: true
