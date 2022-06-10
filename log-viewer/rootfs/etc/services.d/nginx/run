@@ -1,11 +1,11 @@
-#!/usr/bin/with-contenv bashio
+#!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: Log Viewer
-# Runs the Nginx daemon
+# Runs the NGINX daemon
 # ==============================================================================
 
 # Wait for the Log Viewer to become available
 bashio::net.wait_for 4277
 
-bashio::log.info "Starting NGinx..."
+bashio::log.info "Starting NGINX..."
 exec nginx
