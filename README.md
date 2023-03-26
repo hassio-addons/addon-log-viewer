@@ -73,7 +73,7 @@ our [GitHub Repository][repository].
 
 MIT License
 
-Copyright (c) 2018-2022 Dale Higgs <@dale3h>
+Copyright (c) 2018-2023 Dale Higgs <@dale3h>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -115,7 +115,7 @@ SOFTWARE.
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
 [logger]: https://www.home-assistant.io/integrations/logger/
-[maintenance-shield]: https://img.shields.io/maintenance/yes/2022.svg
+[maintenance-shield]: https://img.shields.io/maintenance/yes/2023.svg
 [project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-log-viewer.svg
