@@ -8,7 +8,7 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 # Install requirements for add-on
 RUN \
     apk add --no-cache \
-        nginx=1.22.0-r1 \
+        nginx=1.22.1-r0 \
         nodejs=16.16.0-r0 \
         npm=8.10.0-r0 \
     \
