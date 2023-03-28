@@ -15,8 +15,6 @@ RUN \
     && apk add --no-cache --virtual .build-dependencies \
         git=2.38.4-r1 \
     \
-    && npm set unsafe-perm true \
-    \
     && VERSION="c5b60e75dab012bb5fb01096898c643fafe09bb5" \
     && npm -g i \
         "git+https://github.com/frenck/ws-log.git#${VERSION}" \
