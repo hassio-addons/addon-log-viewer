@@ -95,7 +95,7 @@ SOFTWARE.
 
 [aarch64-shield]: https://img.shields.io/badge/aarch64-yes-green.svg
 [amd64-shield]: https://img.shields.io/badge/amd64-yes-green.svg
-[armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
+[armhf-shield]: https://img.shields.io/badge/armhf-no-red.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [buymeacoffee-shield]: https://www.buymeacoffee.com/assets/img/guidelines/download-assets-sm-2.svg
 [buymeacoffee]: https://www.buymeacoffee.com/dale3h
@@ -111,7 +111,7 @@ SOFTWARE.
 [forum]: https://community.home-assistant.io/t/home-assistant-community-add-on-log-viewer/64377?u=dale3h
 [github-actions-shield]: https://github.com/hassio-addons/addon-log-viewer/workflows/CI/badge.svg
 [github-actions]: https://github.com/hassio-addons/addon-log-viewer/actions
-[i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+[i386-shield]: https://img.shields.io/badge/i386-no-red.svg
 [issue]: https://github.com/hassio-addons/addon-log-viewer/issues
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
 [logger]: https://www.home-assistant.io/integrations/logger/
