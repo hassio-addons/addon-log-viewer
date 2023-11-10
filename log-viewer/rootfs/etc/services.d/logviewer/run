@@ -4,4 +4,4 @@
 # Runs the Log Viewer
 # ==============================================================================
 bashio::log.info "Starting Log Viewer..."
-exec ws-log "/config/home-assistant.log"
+exec ws-log "/homeassistant/home-assistant.log"
