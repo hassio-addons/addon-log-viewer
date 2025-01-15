@@ -11,7 +11,7 @@ RUN \
         nginx=1.24.0-r16 \
     \
     && apk add --no-cache --virtual .build-dependencies \
-        git=2.43.5-r0 \
+        git=2.43.6-r0 \
     \
     && VERSION="c5b60e75dab012bb5fb01096898c643fafe09bb5" \
     && npm -g i \
