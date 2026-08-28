@@ -23,6 +23,15 @@ Browser-based log utility for Home Assistant.
 
 ![Log Viewer Screenshot](images/screenshot.gif)
 
+## Deprecation warning
+
+**This add-on is in a deprecated state!**
+
+Home Assistant now provides built-in live log streaming for Home Assistant
+itself, all add-ons, and all other system components. That makes this add-on
+obsolete; it will not receive any updates anymore and has been removed from
+our add-on store.
+
 ## About
 
 Easily monitor your Home Assistant logs in your web browser. Custom filtering
@@ -116,7 +125,7 @@ SOFTWARE.
 [license-shield]: https://img.shields.io/github/license/hassio-addons/addon-log-viewer.svg
 [logger]: https://www.home-assistant.io/integrations/logger/
 [maintenance-shield]: https://img.shields.io/maintenance/yes/2024.svg
-[project-stage-shield]: https://img.shields.io/badge/project%20stage-experimental-yellow.svg
+[project-stage-shield]: https://img.shields.io/badge/project%20stage-%20!%20DEPRECATED%20%20%20!-ff0000.svg
 [reddit]: https://reddit.com/r/homeassistant
 [releases-shield]: https://img.shields.io/github/release/hassio-addons/addon-log-viewer.svg
 [releases]: https://github.com/hassio-addons/addon-log-viewer/releases
